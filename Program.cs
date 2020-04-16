@@ -378,7 +378,97 @@ namespace physica
                 }
             } while (page <= 6);
         }
-
+        static void Chapter4()
+        {
+            int page = 1; int ans = 0;
+            do
+            {
+                switch (page)
+                {
+                    case 1:
+                        Console.Clear();
+                        Console.WriteLine("==============================================================================");
+                        Console.WriteLine("|Приклади розв'язування задач.                                               |");
+                        Console.WriteLine("|Задача 1. Стадо антилоп може досить довгий час зберігати швидкість руху 80  |");
+                        Console.WriteLine("|км/год. Який шлях подолає стадо за півгодини?                               |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|Дано:         | 1. Переводимо одиниці вимірювання в СІ.                     |");
+                        Console.WriteLine("|U = 80 км/год |  U = 80 * 1000 / 3600 = 22,22 м/с                           |");
+                        Console.WriteLine("|t = 0,5 год   |  t = 0,5*60*60 = 1800 c                                     |");
+                        Console.WriteLine("|--------------| 2.Виводимо робочу формулу.                                  |");
+                        Console.WriteLine("|l - ?         |      l        ------------                                  |");
+                        Console.WriteLine("|                U = ---;  =>  |  l = U*t; | - робоча формула;               |");
+                        Console.WriteLine("|                     t        ------------                                  |");
+                        Console.WriteLine("|                3. Підставляємо числові дані.                               |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|l = 22,22 * 1800 = 39 996 м = 39,9 км або наближено 40 кілометів.           |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|Відповідь: Стадо антилом за цей час пройшло 40 кілометрів.                  |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                Сторінка 1  |");
+                        Console.WriteLine("==============================================================================");
+                        break;
+                    case 2:
+                        Console.Clear();
+                        Console.WriteLine("==============================================================================");
+                        Console.WriteLine("|Задача 2. Визначте, яка швидкість руху більша: 16 м/с чи 54 км/год.         |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|Дано:          | 1.Для отримання можливості порівняти два числа потірбно    |");
+                        Console.WriteLine("|U1 = 16 м/с    |   перевести одиниці вимірювання до одної системи.          |");
+                        Console.WriteLine("|U2 = 54 км/год |   Переведемо всі одиниці до СІ.                            |");
+                        Console.WriteLine("|---------------|         U2 = 54 * 1000 / 3600 = 15 м/с                     |");
+                        Console.WriteLine("|U1/U2 - ?      | 2. Порівнюємо два числа між собою.                         |");
+                        Console.WriteLine("|                   Як бачимо друга швидкість тіла є меншою за першу на 1    |");
+                        Console.WriteLine("|                   метр за секунуду.                                        |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|Відпвідь: Перша швидкість є більшою за другу на 1 метр за секнуду.          |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                Сторінка 2  |");
+                        Console.WriteLine("==============================================================================");
+                        break;
+                    case 3:
+                        Console.Clear();
+                        Console.WriteLine("==============================================================================");
+                        Console.WriteLine("|Задача 3. В астрономії існує одиниця вимірювання довжини світловий рік,     |");
+                        Console.WriteLine("|яку застосовують доя визначення міжзоряних відстаней. Один світловий рік    |");
+                        Console.WriteLine("|дорівнює відстані, яку долає світло у вакуумі за 1 рік. Подайте цю          |");
+                        Console.WriteLine("|відстаньу кілометрах, вважаючи, що швидкість поширення світла у вакуумі     |");
+                        Console.WriteLine("|дорівнює 300000 км/с.                                                       |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|Дано:            | 1. Переводимо всі одиниці до сисетеми СІ.                |");
+                        Console.WriteLine("|Uc = 300000 км/с | Uc = 300000 * 1000 = 300000000 м/с                       |");
+                        Console.WriteLine("|t = 1 рік        | t = 1 * 365 * 24 * 60 * 60 = 31536000 c                  |");
+                        Console.WriteLine("|-----------------| 2. В першій задачі ми вже виводили формулу для даного    |");
+                        Console.WriteLine("|l - ?                 типу задачі, тому скористаємося вже робочою           |");
+                        Console.WriteLine("|                      формулою.                                             |");
+                        Console.WriteLine("|                                 l = Uc * t;                                |");
+                        Console.WriteLine("|                   3. Підставляємо числові дані до формули.                 |");
+                        Console.WriteLine("|                l = 300000000 * 31536000 = 9 460 800 000 000 000 м          |");
+                        Console.WriteLine("|                            або це 9 460 800 000 000 кілометрів.            |");
+                        Console.WriteLine("|Відповідь: Світло долає 9 460 800 000 000 кілометрів.                       |");
+                        Console.WriteLine("|                                                                Сторінка 3  |");
+                        Console.WriteLine("==============================================================================");
+                        break;
+                }
+                Console.Write("=>");
+                ans = Convert.ToInt32(Console.ReadLine());
+                if (ans == 1)
+                    page--;
+                if (ans == 2)
+                    page++;
+                if (page == 0)
+                {
+                    Console.WriteLine("Це перша сторінка, перегорнути в цей бік неможливо!");
+                    page++;
+                    Console.ReadKey();
+                }
+            } while (page <= 3);
+        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.Unicode;
@@ -416,6 +506,9 @@ namespace physica
                         break;
                     case 5:
                         Chapter3();
+                        break;
+                    case 7:
+                        Chapter4();
                         break;
                 }
             }
