@@ -350,7 +350,7 @@ namespace physica
                         Console.WriteLine("|цього необхідно шлях поділити на швидкість руху:                            |");
                         Console.WriteLine("|t = l/U;                                                                    |");
                         Console.WriteLine("|Інколи для знаходження шляху, швидкості або часу руху тіла зручно           |");
-                        Console.WriteLine("|скористатися (чарівним) трикутником.                                       |");
+                        Console.WriteLine("|скористатися (чарівним) трикутником.                                        |");
                         Console.WriteLine("|                                                                            |");
                         Console.WriteLine("|                                                                            |");
                         Console.WriteLine("|                                                                            |");
@@ -468,6 +468,143 @@ namespace physica
                     Console.ReadKey();
                 }
             } while (page <= 3);
+        }
+        static void Chapter5()
+        {
+            int page = 1; int ans = 0;
+            do
+            {
+                switch (page)
+                {
+                    case 1:
+                        Console.Clear();
+                        Console.WriteLine("==============================================================================");
+                        Console.WriteLine("|Нерівномірний рух. Середня швидкість нерівномірного руху.                   |");
+                        Console.WriteLine("|Спостерігаємо нерівномірний рух.                                            |");
+                        Console.WriteLine("|У повсякденному житті ми зазвичай маємо спарву з нерівномірним рухом. Так,  |");
+                        Console.WriteLine("|нерівномірним є рух автобуса та інших транспортних засобів, тух тіл, що     |");
+                        Console.WriteLine("|падають, рух спортсменів на біговій доріжці. А ще згадайте, наприклад, як   |");
+                        Console.WriteLine("|котиться мяч, як ви рухаєтесь під час прогулянки, не уроках фізкультури.    |");
+                        Console.WriteLine("|Нерівномірний рух - це рух, під час якого тіло за рівні інтервали часу      |");
+                        Console.WriteLine("|долає різний шлях.                                                          |");
+                        Console.WriteLine("|Зверніть увагу! Під час нерівномірного руху значення швидкості руху тіла    |");
+                        Console.WriteLine("|з часом змінюється.                                                         |");
+                        Console.WriteLine("|Тепер можемо класифікувати види механічного руху:                           |");
+                        Console.WriteLine("|1. за формою тарєктроії - прямолінійнияй, криволінійний;                    |");
+                        Console.WriteLine("|2. за характером руху тіла - рівномірний, нерівномірний.                    |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|Визначаємо середню швидкість руху тіла                                      |");
+                        Console.WriteLine("|Припустимо, що потяг пройшов 150 км (відстань між двома станціями) за 2,5   |");
+                        Console.WriteLine("|години. Якщо поділити 150 км на 2,5 год, отримаємо швидкість руху потяга -  |");
+                        Console.WriteLine("|                                                                Сторінка 1  |");
+                        Console.WriteLine("==============================================================================");
+                        break;
+                    case 2:
+                        Console.Clear();
+                        Console.WriteLine("==============================================================================");
+                        Console.WriteLine("|60 км/год. Але ж потяг рухався нерівномірно! У такому випадку говорять, що  |");
+                        Console.WriteLine("|отримано середню швидкість потяга.                                          |");
+                        Console.WriteLine("|Середня швидкість руху тіла Uсер - це фізична величина, що дорівнює         |");
+                        Console.WriteLine("|відношенню всього шляху l, який подолало тіло, до інтервалу часу t, за      |");
+                        Console.WriteLine("|який цей шлях подолано:                                                     |");
+                        Console.WriteLine("|                                 l                                          |");
+                        Console.WriteLine("|                         Uсер = ---                                         |");
+                        Console.WriteLine("|                                 t                                          |");
+                        Console.WriteLine("|Зверніть увагу! У даному випадку t - це сума часу руху тіла та часу,        |");
+                        Console.WriteLine("|витраченого можливі зуинки в ході цього руху.                               |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|Аналізуємо швидкість нерівномірного руху                                    |");
+                        Console.WriteLine("|Для опису нерівномірного руху тіла згучно використовувати графіки           |");
+                        Console.WriteLine("|Розглянемо графік  шуидкості нерівномірного руху деякого тіла.              |");
+                        Console.WriteLine("|Скориставшись гарфіком, з'ясуємо: як рухалося тіло; якою була шередня       |");
+                        Console.WriteLine("|швидкість руху тіла на цьому шляху.                                         |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                Сторінка 2  |");
+                        Console.WriteLine("==============================================================================");
+                        break;
+                    case 3:
+                        Console.Clear();
+                        Console.WriteLine("==============================================================================");
+                        Console.WriteLine("|     |U, м/с                                                                |");
+                        Console.WriteLine("|     |                                                                      |");
+                        Console.WriteLine("| 20  |   ------------                                                       |");
+                        Console.WriteLine("| 15  |  /                                                                   |");
+                        Console.WriteLine("| 10  | /                                                                    |");
+                        Console.WriteLine("|  5  |/                                                                     |");
+                        Console.WriteLine("|  0  |-|-|-|-|--|----->                                                     |");
+                        Console.WriteLine("|      10 20 30    t, c                                                      |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|За графіком бачимо, що швидкість руху  тіла пртягом перших  15 с            |");
+                        Console.WriteLine("|рівномірно збільшилася від 0 до 20 м/с.                                     |");
+                        Console.WriteLine("|Для визначення шляху який подолало  тіло за цей час, згадаємо, що числове   |");
+                        Console.WriteLine("|значення  шляху, який подолало тіло, дорівнює числовому значенню площі      |");
+                        Console.WriteLine("|фігури під графіком швидкості тіла. Отже, визначимо площу заштрихованого    |");
+                        Console.WriteLine("|трикутника.                                                                 |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                Сторінка 3  |");
+                        Console.WriteLine("==============================================================================");
+                        break;
+                    case 4:
+                        Console.Clear();
+                        Console.WriteLine("==============================================================================");
+                        Console.WriteLine("|     |U, м/с                                                                |");
+                        Console.WriteLine("|     |                                                                      |");
+                        Console.WriteLine("| 20  |   ------------                                                       |");
+                        Console.WriteLine("| 15  |  /                                                                   |");
+                        Console.WriteLine("| 10  | //                                                                   |");
+                        Console.WriteLine("|  5  |///                                                                   |");
+                        Console.WriteLine("|  0  |-|-|-|-|--|----->                                                     |");
+                        Console.WriteLine("|      10 20 30    t, c                                                      |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|З рисунку бачимо, що площа заштрихованого трикутника становить половину     |");
+                        Console.WriteLine("|площі прямокутника з довжиною 20 м/с і шириною 15 с. Площа прямокутника, у  |");
+                        Console.WriteLine("|свою чергу, дорівнює добутку його довжини та ширини.                        |");
+                        Console.WriteLine("|Таким чином, шлях l1, прйдений тілом за 15 с, становить:                    |");
+                        Console.WriteLine("|              1 |     м         |    300 м                                  |");
+                        Console.WriteLine("|        l1 = ---| 20 --- * 15 с | = -------- = 150 м.                       |");
+                        Console.WriteLine("|              2 |     с         |      2                                    |");
+                        Console.WriteLine("|Наступні 10 с тіло рухалося рівномірно зі швидкістью 20 м/с тому шлях l2,   |");
+                        Console.WriteLine("|                                                                Сторінка 4  |");
+                        Console.WriteLine("==============================================================================");
+                        break;
+                    case 5:
+                        Console.Clear();
+                        Console.WriteLine("==============================================================================");
+                        Console.WriteLine("|подоланий тілом за цей час, дорівнює:                                       |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|        l2 = U*t = 20 м/c * 10 c = 200 м.                                   |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|Загальний шлях l, подоланий тілом за 25 с спостереження, слкав 350 м:       |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|       l = 150 v + 200 м =  350 м.                                          |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|Знаючи шлях і час руху тіла, визначимо середню швидкість руху тіла:         |");
+                        Console.WriteLine("|                    l     350 м         м                                   |");
+                        Console.WriteLine("|            Uсер = --- = -------- = 14 ---                                  |");
+                        Console.WriteLine("|                    t      25 с         с                                   |");
+                        Console.WriteLine("|Зверніть увагу! Шлях не може зменшуватися, тому графік шляху обо            |");
+                        Console.WriteLine("|піднімається, або залишається горизонтальним, однак ніколи не опускається.  |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                            |");
+                        Console.WriteLine("|                                                                Сторінка 5  |");
+                        Console.WriteLine("==============================================================================");
+                        break;
+                }
+                Console.Write("=>");
+                ans = Convert.ToInt32(Console.ReadLine());
+                if (ans == 1)
+                    page--;
+                if (ans == 2)
+                    page++;
+                if (page == 0)
+                {
+                    Console.WriteLine("Це перша сторінка, перегорнути в цей бік неможливо!");
+                    page++;
+                    Console.ReadKey();
+                }
+            } while (page <= 5);
         }
         static void Main(string[] args)
         {
